@@ -1,0 +1,301 @@
+
+body { 
+background-color: rgb(255, 255, 245); 
+}
+
+
+.title { 
+	font-family: Georgia; 
+	display: flex;
+	text-align: left;
+	font-size: 3em;
+	margin: 50px;
+	width: 60%;
+}
+
+.heading1 {
+/* 	margin-bottom: 6em;*/
+font-size: 2.4em;
+display: flex;
+text-align: left;
+margin: 50px;
+
+}
+
+.navBar { 
+	background-color: green;
+	border: 4px dotted lightgreen;
+	
+	font-size: 25px;
+	text-align: center;
+	width: 50%;
+	display: flex;
+	justify-content: space-around; 
+	
+}
+
+a:link, a:visited {
+
+	color: white;
+	padding: 20px 20px;
+	word-spacing: 5px;
+}
+
+/* NOTE: This extra } character was breaking the CSS and causing the heading2 style to not apply */
+
+/*}*/
+
+.heading2 {
+	width: 60%;
+	margin-left: 10px;
+	font-size: 25px;
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+
+}
+#circleRow {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: -6em;
+	
+}
+
+#circleText {
+	width: 20%;
+	background-color: floralwhite;
+	border: 4px solid;
+	border-color: green;
+	border-radius: 70%;
+
+	padding: 2em;
+	margin-top: 2em;
+	margin-bottom: 2.7em;
+	margin-left: 25em;
+	text-align: center;
+	font-size: 2em;
+	font-style: bold;
+	color:darkgreen;
+}
+
+
+/* NOTE: Styling the A link in the circle */
+#circleText a, #circleText a:visited {
+	color:darkgreen;
+	text-decoration: none;
+}
+
+#circleText a:hover {
+	color: mediumseagreen;
+}
+
+
+.firstBox { 
+	border: 7px double;
+	width: 700px;
+	height: 90%;
+	border-color: green;
+	background-color: beige;
+	display: flex;
+	margin-left: 3.5em;
+	text-align: left;
+	
+	padding:15px;
+	padding-top: 2px;
+	flex-direction: column;
+	align-item: center;
+
+}
+
+.firstBox p { 
+	font-size: 20px;
+
+}
+
+.firstBox img {
+	width: 100%;
+}
+
+/* this is second page */
+
+.scatterContainer {
+	display: flex;
+	margin-top: 100px;
+	margin-left: 13px;
+	margin-right: 17px;
+	gap: 5em;
+
+}
+
+#firstScatter a, #firstScatter a:visited {
+	color:darkgreen;
+	text-decoration: none;
+}
+
+#firstScatter a:hover {
+	color: mediumseagreen;
+}
+
+#secondScatter a, #secondScatter a:visited {
+	color:darkgreen;
+	text-decoration: none;
+}
+
+#secondScatter a:hover {
+	color: mediumseagreen;
+}
+
+#thirdScatter a, #thirdScatter a:visited {
+	color:darkgreen;
+	text-decoration: none;
+}
+
+#thirdScatter a:hover {
+	color: mediumseagreen;
+}
+
+
+.scatterContent {
+	background-color: beige;
+	border: 6px solid green;
+	border-style: dotted;
+	border-radius: 2em;
+	width: 500px;
+	height: fit-content;
+	padding: 1em;
+
+}
+.scatterContent img { 
+	display: flex;
+	text-align: center;	
+	width: 300px;
+	padding-left: 2em;
+	
+}
+
+	
+.scatterContent p {
+
+	font-size: 25px;
+	color: solid green;
+	display: flex;
+	text-align: center;
+
+}
+
+#firstScatter {
+	margin-top: 3em;
+	<
+}
+
+#secondScatter {
+	margin-top: 13em;
+
+}
+#secondScatter img {
+	height: 400px;
+}
+
+#thirdScatter {
+	margin-top: 5em;
+}
+
+
+/* plant based */
+
+/* NOTE: The poblems you are having are caused by:
+					1. Adding a fixed height to the menu1 div and its content– we can remove that
+					   so it just stretches to the size of the content inside of it
+					2. Using "float" – float is an old part of CSS that we don't use
+					   any more, it creates complications by causing things to not
+					   "have height", which made the .menu1 div "collapse", likely why
+					   you gave it a fixed height. We can just use flexbox instead.
+*/
+
+.menu1 { 
+	background-color: beige;
+/*	height: 950px;*/
+	border: solid 3px Green;
+	display: flex;
+}
+
+.float-child-element { 
+/*    float: left; */
+	width: 50%;
+}
+
+
+.child {
+	margin: 3em;
+	padding-left: 3em;
+	width: 50%;
+/*	height: 200px;*/
+}
+.child img {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	margin-bottom: 2em;
+	border: solid green 3px;
+	flex:1;
+}
+.vl1 {
+	border-left: 4px dashed green;
+	height: 970px;
+	position: absolute;
+	left: 50%;
+	top: 32%;
+}
+
+.vl2 {
+	border-left: 4px dashed green;
+	height: 950px;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+}
+
+.vl3 {
+	border-left: 4px dashed green;
+	height: 1245px;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+}
+
+
+.title1 { 
+	font-style:bold;
+	border-bottom: solid 2px black ;
+	border-bottom-length: 50% ;
+	margin-left: 2em;
+}
+.ingre h4 {
+	font-size: 22px;
+}
+.ingre li {
+	font-size: 17px;
+	line-height: 1.7;
+}
+
+.ingre {
+	border: solid black 2px;
+	flex: 1;
+	padding-left:.5em;
+	padding-right: .5em;
+}
+.instruction1 { 
+	margin-left: 10%; 
+	height: 200px;
+	padding-right: 3em;
+	line-height: 2;
+}
+.heading3 {
+	font-size:25px;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.instruction1 ol {
+	font-size: 17px;
+}
